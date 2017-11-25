@@ -166,3 +166,9 @@
 
 s = "22"
 print(s.zfill(5))
+
+
+## 슬라이스 미리 지정해놓고 가져다쓰기
+save_slice = slice(1,3)
+a=[1,2,3,4,5,6]
+print(a[save_slice])
