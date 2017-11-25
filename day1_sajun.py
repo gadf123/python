@@ -1,40 +1,52 @@
-# 사전 만들기
-d = {
-    "apple": "steve jobs"
-    , "samsung": "je yong"
-}
-
-# 키가 없으면 오류가남
-print(d["apple"])
-
-# 키가 없어도 오류가안남
-print(d.get("apple1", "--"))
-
-# 키값들 가져오기
-print(d.keys())
-
-# value 값들 가져오기
-print(d.values())
-
-# key, value 형태로 가져오기
-print(d.items())
-
-# 값 꺼내오기 원본에서 가져와서 원본은 해당값 삭제된다
-# print(d.pop("apple"))
+# # 사전 만들기
+# d = {
+#     "apple": "steve jobs"
+#     , "samsung": "je yong"
+# }
+#
+# # 키가 없으면 오류가남
+# print(d["apple"])
+#
+# # 키가 없어도 오류가안남
+# print(d.get("apple1", "--"))
+#
+# # 키값들 가져오기
+# print(d.keys())
+#
+# # value 값들 가져오기
+# print(d.values())
+#
+# # key, value 형태로 가져오기
+# print(d.items())
+#
+# # 값 꺼내오기 원본에서 가져와서 원본은 해당값 삭제된다
+# # print(d.pop("apple"))
+# # print(d)
+#
+# # print(d.popitem())
+# # print(d)
+#
+# # 사전에 값 추가하기
+# # d["new"] = "newValue"
+# d.update(new="abc")
 # print(d)
-
-# print(d.popitem())
+#
+# d.update({"new1": "abcd"})
 # print(d)
+#
+# d1 = {"key1" : "value1" , "key2" : "value"}
+# d.update(d1)
+# print(d)
+#
+# del d["key1"]
+#
 
-# 사전에 값 추가하기
-# d["new"] = "newValue"
-d.update(new="abc")
-print(d)
+# d = ["a", "b", "c"]
+# print({i: i for i in d})
 
-d.update({"new1": "abcd"})
-print(d)
+s = "Hello {0} {1}"
+print(s.format("1", "2"))
 
-d1 = {"key1" : "value1" , "key2" : "value"}
-d.update(d1)
-print(d)
-
+d = {"abc": "alphabet", "db": "dongbu"}
+s = "Hello {abc} {db}"
+print(s.format(**d))
